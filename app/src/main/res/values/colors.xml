@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4e6687</color>
+    <color name="colorPrimaryDark">#4e6687</color>
+    <color name="colorAccent">#4e6687</color>
+    <color name="bg_btn_pressed">#501d7b1f</color>
+
+    <color name="bg_edittext">#bbffffff</color>
+
+    <color name="bg_item_keyboard">#4e6687</color>
+
+    <color name="bg_item_empty">#c0c3c7</color>
+    <color name="bg_item">#fdfdfd</color>
+    <color name="Colorwhite">#fff</color>
+</resources>

@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">لنا لهم صكة</string>
+
+    <string name="flurry_api_key">Q7JYHHFJH7HQDK7762D4</string>
+    <string name="admob_unit_id">ca-app-pub-9375505665112373/1036714041</string>
+
+    <!-- Main screen -->
+    <string name="text_distribution">توزيع الورق</string>
+    <string name="text_team_1">لهم</string>
+    <string name="text_team_2">لنا</string>
+    <string name="btn_new_game">صكة جديدة</string>
+    <string name="text_retreat">تراجع</string>
+    <string name="btn_start_game">سجل</string>
+    <string name="btn_cancel">إلغاء</string>
+    <string name="title_btn_remove_ads">إزالة الإعلانات</string>
+
+    <string name="title_dialog">انتهت اللعبة</string>
+    <string name="message_right_win">مبروووك لنا</string>
+    <string name="message_left_win">مبروووك لهم</string>
+    <string name="title_new_game">صكة جديدة؟</string>
+
+    <!-- About screen -->
+    <string name="btn_back">عودة</string>
+
+    <string name="en_game_name">Lna Lhm Skkah</string>
+    <string name="en_idea">Idea &amp; design</string>
+    <string name="en_development">Development</string>
+    <string name="en_author_1">Abdullah Mohammad</string>
+    <string name="en_author_2">Abdullah Bin Sabih</string>
+
+    <string name="ar_game_name">لنا لهم صكة</string>
+    <string name="ar_idea">فكرة وتصميم</string>
+    <string name="ar_development">تطوير</string>
+    <string name="ar_author_1">عبدالله القسومي</string>
+    <string name="ar_author_2">عبدالله الصبيح</string>
+    <string name="game_version">0.0</string>
+    <string name="text_copyright">جميع الحقوق محفوظة ٢٠١٢</string>
+
+    <!-- Donate -->
+    <string name="support_title">ادعم تطبيق لنا لهم</string>
+    <string name="support_content">يمكنك الآن دعم تطبيق لنا لهم بشراء النسخة الكاملة وإزالة الإعلانات الموجودة أسفل التطبيق. دعمكم للتطبيق يعني المزيد من التطوير والتحسين :)</string>
+    <string name="support_buy">إزالة الإعلانات</string>
+    <string name="cancel">إلغاء</string>
+
+    <!-- Feedback -->
+    <string name="feedback_title">تقييمك لتطبيق لنا لهم؟</string>
+    <string name="feedback_content">نرجو منك إبداء رأيك وملاحظاتك عن تطبيق لنا لهم على المتجر. دعمك لنا يعني المزيد من التطوير والتحسين لهذا التطبيق :)</string>
+    <string name="feedback_positive">تقييم التطبيق الآن</string>
+    <string name="feedback_negative">لاحقاً</string>
+    <string name="lana">لندا</string>
+    <string name="send_for_whttsapp">للإستفسار عبر الواتس أب</string>
+    <string name="send_for_email">للإستفسار عبر الإيميل</string>
+    <string name="company_game_name">مؤسسة كروت اللعب</string>
+    <string name="en_company_game_name">Playing Cards Crop .</string>
+
+</resources>
