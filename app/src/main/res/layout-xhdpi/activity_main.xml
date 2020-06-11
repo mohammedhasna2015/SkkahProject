@@ -22,14 +22,14 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dip"
-                android:layout_weight="3.3" >
+                android:layout_weight="2" >
             </RelativeLayout>
 
             <ListView
                 android:id="@+id/lvScore"
                 android:layout_width="match_parent"
                 android:layout_height="0dip"
-                android:layout_weight="4"
+                android:layout_weight="6"
                 android:divider="#d8d6d6"
                 android:dividerHeight="0.5dp"
                 android:listSelector="@android:color/transparent"
@@ -57,12 +57,12 @@
                 android:src="@drawable/main_control" />
 
             <ImageView
-                android:layout_width="120dp"
-                android:src="@drawable/sakka_icon"
+                android:layout_width="130dp"
+                android:src="@drawable/skka_icon_480"
                 android:layout_alignParentTop="true"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="10dp"
                 android:layout_centerInParent="true"
-                android:layout_height="120dp"/>
+                android:layout_height="130dp"/>
 
         </RelativeLayout>
 
@@ -76,19 +76,18 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dip"
-                android:layout_weight="2.6" >
+                android:layout_weight="2.0" >
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:gravity="center"
-                    android:layout_marginRight="50dp"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_marginLeft="40dp"
                     android:layout_height="match_parent">
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
                         android:layout_alignParentLeft="true"
                         android:orientation="vertical"
                         android:paddingRight="20dp" >
@@ -101,10 +100,10 @@
                             android:shadowDx="2"
                             android:shadowDy="2"
                             android:shadowRadius="5"
-                            android:fontFamily="@font/geezapro"
+                            android:fontFamily="@font/font_custom"
                             android:text="@string/text_team_1"
                             android:textColor="@android:color/white"
-                            android:textSize="28sp" />
+                            android:textSize="34sp" />
 
                         <TextView
                             android:id="@+id/tvScoreLeft"
@@ -113,18 +112,19 @@
                             android:shadowColor="@android:color/black"
                             android:shadowDx="2"
                             android:shadowDy="2"
-                            android:fontFamily="@font/geezapro"
+                            android:fontFamily="@font/font_custom"
                             android:shadowRadius="5"
                             android:text="0"
                             android:textColor="@android:color/white"
-                            android:textSize="28sp" />
+                            android:textSize="38dp" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:gravity="center"
-                        android:layout_centerInParent="true"
+                        android:layout_marginTop="10dp"
+
                         android:layout_alignParentRight="true"
                         android:orientation="vertical"
                         android:paddingLeft="20dp" >
@@ -136,11 +136,11 @@
                             android:shadowColor="@android:color/black"
                             android:shadowDx="2"
                             android:shadowDy="2"
-                            android:fontFamily="@font/geezapro"
+                            android:fontFamily="@font/font_custom"
                             android:shadowRadius="5"
                             android:text="@string/text_team_2"
                             android:textColor="@android:color/white"
-                            android:textSize="28sp" />
+                            android:textSize="34sp" />
 
                         <TextView
                             android:id="@+id/tvScoreRight"
@@ -149,11 +149,11 @@
                             android:shadowColor="@android:color/black"
                             android:shadowDx="2"
                             android:shadowDy="2"
-                            android:fontFamily="@font/geezapro"
+                            android:fontFamily="@font/font_custom"
                             android:shadowRadius="5"
                             android:text="0"
                             android:textColor="@android:color/white"
-                            android:textSize="28sp" />
+                            android:textSize="38sp" />
                     </LinearLayout>
                 </RelativeLayout>
             </RelativeLayout>
@@ -161,7 +161,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="5.9" >
+                android:layout_weight="3.9" >
 
                 <Button
                     android:id="@+id/btnCancelMirror"
@@ -188,11 +188,12 @@
                     android:id="@+id/tvDistribution"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
                     android:layout_above="@+id/ivNavigation"
                     android:layout_centerHorizontal="true"
                     android:shadowColor="@android:color/black"
                     android:shadowDx="2"
-                    android:fontFamily="@font/geezapro"
+                    android:fontFamily="@font/font_custom"
                     android:shadowDy="2"
                     android:shadowRadius="5"
                     android:text="@string/text_distribution"
@@ -210,6 +211,7 @@
                     android:imeOptions="flagNoEnterAction"
                     android:inputType="number"
                     android:padding="8dp"
+                    android:visibility="gone"
                     android:textSize="38sp" />
 
                 <EditText
@@ -219,16 +221,16 @@
                     android:layout_centerInParent="true"
                     android:background="@color/bg_edittext"
                     android:gravity="center"
-                    android:visibility="invisible"
                     android:imeOptions="flagNoEnterAction"
                     android:inputType="number"
                     android:padding="8dp"
+                    android:visibility="gone"
                     android:textSize="38sp" />
 
                 <Button
                     android:id="@+id/btnStartNewTurn"
-                    android:layout_width="120dp"
-                    android:layout_height="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
                     android:layout_centerInParent="true"
                     android:background="@drawable/btn_play"
                     android:contentDescription="@string/app_name"
@@ -238,7 +240,7 @@
                     android:shadowRadius="5"
                     android:text="@string/btn_start_game"
                     android:textColor="@android:color/white"
-                    android:textSize="34sp"
+                    android:textSize="38sp"
                     android:textStyle="bold"
                     android:visibility="visible" />
 
@@ -271,7 +273,7 @@
                     android:imeOptions="actionDone"
                     android:inputType="number"
                     android:padding="8dp"
-                    android:textSize="22sp"
+                    android:textSize="38sp"
                     android:visibility="invisible" >
                 </EditText>
 
@@ -288,13 +290,13 @@
                     android:imeOptions="actionDone"
                     android:inputType="number"
                     android:padding="8dp"
-                    android:textSize="22sp"
+                    android:textSize="38sp"
                     android:visibility="invisible" />
 
                 <Button
                     android:id="@+id/btnCalculate"
-                    android:layout_width="120dp"
-                    android:layout_height="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="75dp"
                     android:layout_above="@+id/btnStartNewTurn"
                     android:layout_centerInParent="true"
                     android:background="@drawable/btn_play"
@@ -305,7 +307,7 @@
                     android:shadowRadius="5"
                     android:text="@string/btn_start_game"
                     android:textColor="@android:color/white"
-                    android:textSize="34sp"
+                    android:textSize="38sp"
                     android:textStyle="bold"
                     android:visibility="invisible" />
 
@@ -331,13 +333,13 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1.5" >
+                android:layout_weight="4.1" >
 
                 <Button
                     android:id="@+id/btnNewGame"
-                    android:layout_width="150dp"
-                    android:layout_height="90dp"
-                    android:layout_alignParentTop="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/btn_new_game"
                     android:shadowColor="@android:color/black"

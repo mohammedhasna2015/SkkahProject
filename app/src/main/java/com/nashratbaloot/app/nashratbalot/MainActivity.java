@@ -628,6 +628,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 			}
 			
 		} else if (v == btnCancel) {
+			hideEditText();
 			showKeyboard(false);
 			toggleViews(false);
 			new Handler().postDelayed(new Runnable() {
@@ -645,6 +646,22 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 		} else if (v == ibRemoveAds) {
 			adView.setVisibility(View.GONE);
 			ibRemoveAds.setVisibility(View.GONE);
+		}
+	}
+
+	private void hideEditText() {
+		if (etInputRightMirror.getVisibility()==View.VISIBLE){
+			etInputRightMirror.setVisibility(View.GONE);
+		}
+		if (etInputLeftMirror.getVisibility()==View.VISIBLE){
+			etInputLeftMirror.setVisibility(View.GONE);
+		}
+
+		if (etInputLeft.getVisibility()==View.VISIBLE){
+			etInputLeft.setVisibility(View.GONE);
+		}
+		if (etInputRight.getVisibility()==View.VISIBLE){
+			etInputRight.setVisibility(View.GONE);
 		}
 	}
 
