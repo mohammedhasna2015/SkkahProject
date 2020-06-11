@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_about" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="80dp"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:src="@drawable/app_icon"
+                android:layout_marginTop="20dp"
+                android:layout_height="80dp"/>
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"
+                android:src="@drawable/skka_icon_240"
+                android:layout_height="90dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_height="40dp">
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/image_twitter_media"
+                    android:src="@drawable/twitter_icon"
+                    android:layout_marginEnd="10dp"
+                    android:padding="5dp"
+                    android:layout_height="30dp"/>
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/image_snap_chat_media"
+                    android:padding="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/snappchat_icon"
+                    android:layout_height="30dp"/>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:id="@+id/image_instgram_app_media"
+                    android:padding="5dp"
+                    android:src="@drawable/instegram_icon"
+                    android:layout_height="30dp"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:text="Skkah_Ar"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:fontFamily="@font/font_custom"
+                android:textColor="#fff"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/font_custom"
+                    android:text="@string/ar_game_name"
+                    android:textColor="@color/Colorwhite"
+                    android:textSize="12sp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="0.0"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/font_custom"
+                    android:id="@+id/textView10"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+                    android:textColor="@color/Colorwhite"
+
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/en_game_name"
+                    android:fontFamily="@font/font_custom"
+                    android:textSize="12sp"
+                    android:textColor="@color/Colorwhite"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:id="@+id/relative_whatsapp"
+                android:gravity="center"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/send_for_whttsapp"
+                    android:textColor="@color/Colorwhite"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/font_custom"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/image_icon_whatsapp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/whattsapp_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@+id/image_icon_whatsapp"
+                        android:fontFamily="@font/font_custom"
+                        android:text="+966545637880"
+                        android:textColor="@color/Colorwhite"
+                        android:textSize="12sp" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:gravity="center"
+                android:id="@+id/relative_email"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/send_for_email"
+                    android:textColor="@color/Colorwhite"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/font_custom"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:id="@+id/image_icon_email"
+                        android:src="@drawable/email_icon"
+                        android:layout_alignParentLeft="true"
+                        android:layout_height="30dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="Skka_ar@outlook.com"
+                        android:fontFamily="@font/font_custom"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/Colorwhite"
+                        android:layout_toRightOf="@+id/image_icon_email"
+                        android:layout_height="wrap_content"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/company_game_name"
+                    android:textColor="@color/Colorwhite"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/font_custom"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/en_company_game_name"
+                    android:fontFamily="@font/font_custom"
+                    android:textSize="12sp"
+                    android:textColor="@color/Colorwhite"
+
+                    android:layout_alignParentLeft="true"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_back"
+        android:contentDescription="@string/app_name"
+        android:scaleType="centerCrop"
+        android:shadowColor="@android:color/black"
+        android:shadowDx="2"
+        android:fontFamily="@font/font_custom"
+        android:shadowDy="2"
+        android:shadowRadius="5"
+        android:text="@string/btn_back"
+        android:textColor="@android:color/white"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+</RelativeLayout>

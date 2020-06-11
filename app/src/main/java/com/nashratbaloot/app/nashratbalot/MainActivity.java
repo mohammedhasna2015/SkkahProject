@@ -648,7 +648,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 			ibRemoveAds.setVisibility(View.GONE);
 		}
 	}
-
+//
 	private void hideEditText() {
 		if (etInputRightMirror.getVisibility()==View.VISIBLE){
 			etInputRightMirror.setVisibility(View.GONE);
