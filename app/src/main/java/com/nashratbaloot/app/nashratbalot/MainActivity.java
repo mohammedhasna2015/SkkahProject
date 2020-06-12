@@ -416,14 +416,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 		ibRemoveAds = (Button) findViewById(R.id.ibRemoveAds);
 		numberKeyboardView = (NumberKeyboardView) findViewById(R.id.viewKeyboard);
 		
-		tvNameLeft.setTypeface(FontUtils.get(getBaseContext(), FONT_GEEZA_PRO));
-		tvNameRight.setTypeface(FontUtils.get(getBaseContext(), FONT_GEEZA_PRO));
-		tvDistribution.setTypeface(FontUtils.get(getBaseContext(), FONT_GEEZA_PRO));
-		btnStartNewTurn.setTypeface(FontUtils.get(getBaseContext(), FONT_GEEZA_PRO_BOLD));
-		btnCalculate.setTypeface(FontUtils.get(getBaseContext(), FONT_GEEZA_PRO_BOLD));
-		btnRevert.setTypeface(FontUtils.get(getBaseContext(), FONT_GEEZA_PRO));
-		btnNewGame.setTypeface(FontUtils.get(getBaseContext(), FONT_GEEZA_PRO));
-		
+
 		btnStartNewTurn.setOnClickListener(this);
 		btnCalculate.setOnClickListener(this);
 		btnNewGame.setOnClickListener(this);
