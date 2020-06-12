@@ -462,7 +462,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 		});
 		
 		adapter = new CoupleScoresAdapter(this, R.layout.item_couple_scores, listCoupleScores);
-		
+
 		lvScore.setAdapter(adapter);
 		
 		adapter.notifyDataSetChanged();
@@ -497,9 +497,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 	
 	private void initListScores() {
 		listCoupleScores.clear();
-		for (int i = 0; i < 10; i++) {
-			listCoupleScores.add(null);	
-		}
+
 	}
 	
 	/**
@@ -697,7 +695,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 		adapter.notifyDataSetChanged();
 		
 		new Handler().postDelayed(new Runnable() {
-			
+
 			@Override
 			public void run() {
 				scrollToEnd();

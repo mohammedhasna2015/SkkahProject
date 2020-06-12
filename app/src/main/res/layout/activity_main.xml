@@ -30,6 +30,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dip"
                 android:layout_weight="6"
+                android:layout_marginTop="30dp"
+                android:paddingTop="10dp"
                 android:divider="#d8d6d6"
                 android:dividerHeight="0.5dp"
                 android:listSelector="@android:color/transparent"
@@ -57,12 +59,12 @@
                 android:src="@drawable/main_control" />
 
             <ImageView
-                android:layout_width="130dp"
+                android:layout_width="100dp"
                 android:src="@drawable/skka_icon_480"
                 android:layout_alignParentTop="true"
                 android:layout_marginTop="10dp"
                 android:layout_centerInParent="true"
-                android:layout_height="130dp"/>
+                android:layout_height="100dp"/>
 
         </RelativeLayout>
 
@@ -103,7 +105,7 @@
                             android:fontFamily="@font/font_custom"
                             android:text="@string/text_team_1"
                             android:textColor="@android:color/white"
-                            android:textSize="34sp" />
+                            android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/tvScoreLeft"
@@ -116,7 +118,7 @@
                             android:shadowRadius="5"
                             android:text="0"
                             android:textColor="@android:color/white"
-                            android:textSize="38dp" />
+                            android:textSize="27sp" />
                     </LinearLayout>
 
                     <LinearLayout
@@ -140,7 +142,7 @@
                             android:shadowRadius="5"
                             android:text="@string/text_team_2"
                             android:textColor="@android:color/white"
-                            android:textSize="34sp" />
+                            android:textSize="30sp" />
 
                         <TextView
                             android:id="@+id/tvScoreRight"
@@ -153,7 +155,7 @@
                             android:shadowRadius="5"
                             android:text="0"
                             android:textColor="@android:color/white"
-                            android:textSize="38sp" />
+                            android:textSize="27sp" />
                     </LinearLayout>
                 </RelativeLayout>
             </RelativeLayout>
@@ -161,7 +163,7 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="3.9" >
+                android:layout_weight="4.3" >
 
                 <Button
                     android:id="@+id/btnCancelMirror"
@@ -188,7 +190,6 @@
                     android:id="@+id/tvDistribution"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="20dp"
                     android:layout_above="@+id/ivNavigation"
                     android:layout_centerHorizontal="true"
                     android:shadowColor="@android:color/black"
@@ -229,7 +230,7 @@
 
                 <Button
                     android:id="@+id/btnStartNewTurn"
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="75dp"
                     android:layout_centerInParent="true"
                     android:background="@drawable/btn_play"
@@ -238,9 +239,10 @@
                     android:shadowDx="2"
                     android:shadowDy="2"
                     android:shadowRadius="5"
+                    android:fontFamily="@font/font_custom"
                     android:text="@string/btn_start_game"
                     android:textColor="@android:color/white"
-                    android:textSize="38sp"
+                    android:textSize="30sp"
                     android:textStyle="bold"
                     android:visibility="visible" />
 
@@ -254,10 +256,11 @@
                     android:shadowColor="@android:color/black"
                     android:shadowDx="2"
                     android:shadowDy="2"
+                    android:fontFamily="@font/font_custom"
                     android:shadowRadius="5"
                     android:text="@string/btn_cancel"
                     android:textColor="@android:color/white"
-                    android:textSize="18sp"
+                    android:textSize="17sp"
                     android:visibility="invisible" />
 
                 <EditText
@@ -265,15 +268,16 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:layout_alignBaseline="@+id/btnCalculate"
-                    android:layout_marginLeft="15dp"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/font_custom"
                     android:layout_toRightOf="@+id/btnCalculate"
                     android:background="@color/bg_edittext"
                     android:gravity="center"
                     android:imeOptions="actionDone"
                     android:inputType="number"
                     android:padding="8dp"
-                    android:textSize="38sp"
+                    android:textSize="28sp"
                     android:visibility="invisible" >
                 </EditText>
 
@@ -287,15 +291,17 @@
                     android:layout_toLeftOf="@+id/btnCalculate"
                     android:background="@color/bg_edittext"
                     android:gravity="center"
+                    android:fontFamily="@font/font_custom"
+
                     android:imeOptions="actionDone"
                     android:inputType="number"
                     android:padding="8dp"
-                    android:textSize="38sp"
+                    android:textSize="28sp"
                     android:visibility="invisible" />
 
                 <Button
                     android:id="@+id/btnCalculate"
-                    android:layout_width="wrap_content"
+                    android:layout_width="150dp"
                     android:layout_height="75dp"
                     android:layout_above="@+id/btnStartNewTurn"
                     android:layout_centerInParent="true"
@@ -304,10 +310,11 @@
                     android:shadowColor="@android:color/black"
                     android:shadowDx="2"
                     android:shadowDy="2"
+                    android:fontFamily="@font/font_custom"
                     android:shadowRadius="5"
                     android:text="@string/btn_start_game"
                     android:textColor="@android:color/white"
-                    android:textSize="38sp"
+                    android:textSize="30sp"
                     android:textStyle="bold"
                     android:visibility="invisible" />
 
@@ -320,6 +327,7 @@
                     android:background="@drawable/bg_btn"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
+                    android:fontFamily="@font/font_custom"
                     android:shadowColor="@android:color/black"
                     android:shadowDx="2"
                     android:shadowDy="2"
@@ -333,22 +341,23 @@
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="4.1" >
+                android:layout_weight="3.7" >
 
                 <Button
                     android:id="@+id/btnNewGame"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="150dp"
+                    android:layout_height="75dp"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:background="@drawable/btn_new_game"
                     android:shadowColor="@android:color/black"
                     android:shadowDx="2"
                     android:shadowDy="2"
+                    android:fontFamily="@font/font_custom"
                     android:shadowRadius="5"
                     android:text="@string/btn_new_game"
                     android:textColor="@android:color/white"
-                    android:textSize="22sp" />
+                    android:textSize="20sp" />
 
                 <ImageButton
                     android:id="@+id/ibInfo"
