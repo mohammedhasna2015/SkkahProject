@@ -113,7 +113,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 	
 	private LinearLayout llAd;
 	
-	private Button ibRemoveAds;
+
 	
 	private NumberKeyboardView numberKeyboardView;
 	
@@ -318,14 +318,13 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 					super.onAdFailedToLoad(errorCode);
 					Log.e("onAdOpened", "onAdOpened");
 					adView.setVisibility(View.GONE);
-					ibRemoveAds.setVisibility(View.GONE);
+
 				}
 
 				@Override
 				public void onAdLoaded() {
 					super.onAdLoaded();
 					adView.setVisibility(View.VISIBLE);
-					ibRemoveAds.setVisibility(View.VISIBLE);
 					Log.e("onAdOpened", "onAdOpened");
 				}
 
@@ -333,7 +332,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 				public void onAdOpened() {
 					super.onAdOpened();
 					adView.setVisibility(View.VISIBLE);
-					ibRemoveAds.setVisibility(View.VISIBLE);
+
 					Log.e("onAdOpened", "onAdOpened");
 				}
 			});
@@ -413,7 +412,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 		etInputLeftMirror = (EditText) findViewById(R.id.etInputLeftMirror);
 		
 		llAd = (LinearLayout) findViewById(R.id.llAd);
-		ibRemoveAds = (Button) findViewById(R.id.ibRemoveAds);
+
 		numberKeyboardView = (NumberKeyboardView) findViewById(R.id.viewKeyboard);
 		
 
@@ -427,8 +426,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 		
 		etInputRight.setOnEditorActionListener(this);
 		etInputLeft.setOnEditorActionListener(this);
-		ibRemoveAds.setOnClickListener(this);
-		
+
 		etInputRight.setOnTouchListener(this);
 		etInputLeft.setOnTouchListener(this);
 		etInputRightMirror.setOnTouchListener(this);
@@ -634,9 +632,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 		} else if (v == ivNavigation) {
 			spinArrow();
 			
-		} else if (v == ibRemoveAds) {
-			adView.setVisibility(View.GONE);
-			ibRemoveAds.setVisibility(View.GONE);
 		}
 	}
 //
