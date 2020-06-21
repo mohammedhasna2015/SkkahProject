@@ -27,7 +27,7 @@
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-9375505665112373~8559980843"/>
+            android:value="ca-app-pub-7015765998317999~2374770025"/>
 
     </application>
 
