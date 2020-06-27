@@ -301,7 +301,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener, 
 			// Create an ad.
 			adView = new AdView(this);
 			adView.setAdSize(AdSize.SMART_BANNER);
-			adView.setAdUnitId("ca-app-pub-9375505665112373/1036714041");
+			adView.setAdUnitId("ca-app-pub-7015765998317999/6736686868");
 
 			// TODO add ad view to layout
 			llAd.addView(adView);
